@@ -139,6 +139,11 @@ void main(int argc, char *argv[])
 						fclose(fp);
 						return;
 					break;
+					case 'd':
+						key = getchar();
+						if(key == 'd')
+							deleteData(cur_line-1, 0);
+					break;
 				}
 			}else if(mode == INPUT_MODE){
 				switch(key){
