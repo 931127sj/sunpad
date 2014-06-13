@@ -46,7 +46,6 @@ void deleteData(int line, int col){
 					cur_node = prev_node->next;
 
 					if((cur_node->line == line) && (cur_node->col == col)){
-						printf("a");
 						prev_node->next = cur_node->next;
 						// free(cur_node);
 						return;
