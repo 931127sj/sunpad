@@ -67,9 +67,6 @@ void main(int argc, char *argv[])
 			deleteData(cur_line-1, 0);
 			printList(head, stdout);
 
-       		cur_line = 2;
-			cur_col = 1;
-
 			sprintf(buff, "\033[%d;%dH", cur_line, cur_col);
 			fputs(buff, stdout);
 		}
