@@ -163,6 +163,8 @@ void main(int argc, char *argv[])
 					break;
 					case 8: // BACKSPACE
 						deleteData(cur_line-1, cur_col-1);
+					
+						fputs("\033[M", stdout);
 
 						cur_col--;
 						if(cur_col < MIN_COL) cur_col = MIN_COL;
